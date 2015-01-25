@@ -6,7 +6,7 @@ category: podcast,season1
 tags: [podcast,season1]
 duration: 00:00
 length: 0
-link: {{site.JB.BASE_PATH}}/S01E01.mp3
+link: https://drive.google.com/drive/#folders/0B8e_WGDCreQmTWVmcF8zZDV3Snc/S01E01.mp3
 ---
 {% include JB/setup %}
 
