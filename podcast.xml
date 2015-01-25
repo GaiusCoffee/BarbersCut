@@ -1,0 +1,77 @@
+---
+layout: nil
+---
+ 
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+ 
+<channel>
+ 
+<title>{{site.title}}</title>
+ 
+<link>{{site.production_url}}</link>
+ 
+<language>en</language>
+ 
+<copyright>&#xA9; 2015 Erik Gaius Capistrano</copyright>
+ 
+<itunes:subtitle>Filipinos sharing random filipino stories</itunes:subtitle>
+ 
+<itunes:author>Erik Gaius Capistrano &amp; Juner Hart Legion</itunes:author>
+ 
+<itunes:keywords>philippines,random,talkshow,filipino,pinoy,technology,films,games,boardgames</itunes:keywords>
+ 
+<itunes:summary>A podcast from Erik Capistrano and Juner Legion on random things filipinos talk about; news, films, computer and boardgames, pop culture, women and other stuff.</itunes:summary>
+ 
+<description>A podcast from Erik Capistrano and Juner Legion on random things filipinos talk about; news, films, computer and boardgames, pop culture, women and other stuff.</description>
+ 
+<itunes:owner>
+ 
+<itunes:name>Erik Gaius Capistrano</itunes:name>
+ 
+<itunes:email>gaius.coffee@gmail.com</itunes:email>
+ 
+</itunes:owner>
+ 
+<itunes:image href="{{site.production_url}}/assets/itunes.jpg" />
+  
+<itunes:category text="Society &amp; Culture" />
+ 
+<itunes:category text="Technology" />
+  
+<itunes:category text="TV &amp; Film" />
+ 
+<itunes:new-feed-url>{{site.production_url}}/podcast.xml</itunes:new-feed-url>
+ 
+ {% for post in site.posts limit:10 %}
+ 
+ <item>
+ 
+ <title>{{ post.title }}</title>
+ 
+ <itunes:author>Erik Gaius Capistrano &amp; Juner Hart Legion</itunes:author>
+ 
+ <itunes:subtitle>Barber's Cut: {{ post.title }}</itunes:subtitle>
+ 
+ <itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
+ 
+ <itunes:image href="{{site.production_url}}/assets/itunes.jpg" />
+ 
+ <enclosure url="{{ post.link }}" length="{{ post.length }}" type="audio/x-m4a" />
+ 
+ <guid>{{ post.link }}</guid>
+ 
+ <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S" }} GMT</pubDate>
+ 
+ <itunes:duration>{{ post.duration }}</itunes:duration>
+ 
+ <itunes:keywords>philippines,random,talkshow,filipino,pinoy,technology,films,games,boardgames</itunes:keywords>
+ 
+ </item>
+ 
+ {% endfor %}
+ 
+</channel>
+ 
+</rss>
