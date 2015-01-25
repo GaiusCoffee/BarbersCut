@@ -9,13 +9,13 @@ highlighter: pygments
 # so be sure to set them if your theme uses them.
 #
 title : "Barber's Cut Podcast" 
-tagline: "Kwentong Barbero"
+tagline: "Kwentong Barbero Lamang"
 author :
   name : Erik Gaius Capistrano
   email : gaius.coffee@gmail.com
   github : GaiusCoffee
   twitter : GaiusCoffee
-  feedburner : 
+  feedburner : false
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -73,7 +73,7 @@ JB :
   categories_path : /categories.html
   tags_path : /tags.html
   atom_path : /atom.xml
-  rss_path : /rss.xml
+  rss_path : /podcast.xml
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
