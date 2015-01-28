@@ -54,11 +54,11 @@ layout: nil
  
  <itunes:subtitle>Barber's Cut: {{ post.title }}</itunes:subtitle>
  
- <itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
+ <itunes:summary>{{ post.description | xml_escape }}</itunes:summary>
  
- <itunes:image href="{{site.JB.BASE_PATH}}/assets/itunes.jpg" />
+ <itunes:image href="{{site.JB.BASE_PATH}}/assets/BarbersCut.png" />
  
- <enclosure url="{{ post.link }}" length="{{ post.length }}" type="audio/x-m4a" />
+ <enclosure url="{{ post.link }}" length="{{ post.length }}" type="audio/mpeg" />
  
  <guid>{{ post.link }}</guid>
  
