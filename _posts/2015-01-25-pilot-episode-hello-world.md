@@ -21,3 +21,5 @@ If you want to join the discussion, contact us in twitter via the hashtag #Barbe
 **Hosts:** Juner Hart Legion (@noojster) & Austin Salvador   
 **Producer:** Erik Gaius Capistrano (@gaiuscoffee)  
 **Recorded on:** January 27, 2015 (Published on January 29, 2015)  
+
+You can <a href="http://googledrive.com/host/0B8e_WGDCreQmTWVmcF8zZDV3Snc/S01E01.mp3">download this episode</a> in MP3 Format, or use <a href="https://gaiuscoffee.github.io/BarbersCut/podcast.xml">this site's rss feed</a> with your favorite podcast app.
