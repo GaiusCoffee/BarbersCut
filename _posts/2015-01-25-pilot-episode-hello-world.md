@@ -10,7 +10,7 @@ link: http://googledrive.com/host/0B8e_WGDCreQmTWVmcF8zZDV3Snc/S01E01.mp3
 ---
 {% include JB/setup %}
 
-Hello, World! Welcome to first episode of Barber's Cut.
+Hello, World! Welcome to the first episode of Barber's Cut.
 
 On this episode, we talk about surving in prison, the most handsome filipinos, advertising bad movies and what to do when you become invisible for a day. On Hashtag Pinoy, Juner scores 3 points against Austin's 2 points, while at the end of the show, we recommend Migz Haleco's Hinahanap Hanap Kita Cover.
 
