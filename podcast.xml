@@ -18,13 +18,13 @@ layout: nil
  
 <itunes:subtitle>Filipinos sharing random filipino stories</itunes:subtitle>
  
-<itunes:author>Erik Gaius Capistrano &amp; Juner Hart Legion</itunes:author>
+<itunes:author>Erik Gaius Capistrano, Juner Hart Legion &amp; Austin Salvador</itunes:author>
  
 <itunes:keywords>philippines,random,talkshow,filipino,pinoy,technology,films,games,boardgames</itunes:keywords>
  
-<itunes:summary>A podcast from Erik Capistrano and Juner Legion on random things filipinos talk about; news, films, computer and boardgames, pop culture, women and other stuff.</itunes:summary>
+<itunes:summary>A podcast from Erik Capistrano, Juner Legion and Austin Salvador on random things filipinos talk about; news, films, computer and boardgames, pop culture, women and other stuff.</itunes:summary>
  
-<description>A podcast from Erik Capistrano and Juner Legion on random things filipinos talk about; news, films, computer and boardgames, pop culture, women and other stuff.</description>
+<description>A podcast from Erik Capistrano, Juner Legion and Austin Salvador on random things filipinos talk about; news, films, computer and boardgames, pop culture, women and other stuff.</description>
  
 <itunes:owner>
  
@@ -34,7 +34,7 @@ layout: nil
  
 </itunes:owner>
  
-<itunes:image href="{{site.JB.BASE_PATH}}/assets/itunes.jpg" />
+<itunes:image href="{{site.JB.BASE_PATH}}/assets/BarbersCut.png" />
   
 <itunes:category text="Society &amp; Culture" />
  

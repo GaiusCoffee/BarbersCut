@@ -1,28 +1,77 @@
 ---
-layout: null
-title : Atom Feed
+layout: nil
 ---
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>{{ site.title }}</title>
- <link href="{{ site.production_url }}/{{ site.atom_path }}" rel="self"/>
- <link href="{{ site.production_url }}"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.production_url }}</id>
- <author>
-   <name>{{ site.author.name }}</name>
-   <email>{{ site.author.email }}</email>
- </author>
-
- {% for post in site.posts %}
- <entry>
-   <title>{{ post.title }}</title>
-   <link href="{{ site.production_url }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.production_url }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
- </entry>
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+ 
+<channel>
+ 
+<title>{{site.title}}</title>
+ 
+<link>{{site.JB.BASE_PATH}}</link>
+ 
+<language>en</language>
+ 
+<copyright>&#xA9; 2015 Erik Gaius Capistrano</copyright>
+ 
+<itunes:subtitle>Filipinos sharing random filipino stories</itunes:subtitle>
+ 
+<itunes:author>Erik Gaius Capistrano, Juner Hart Legion &amp; Austin Salvador</itunes:author>
+ 
+<itunes:keywords>philippines,random,talkshow,filipino,pinoy,technology,films,games,boardgames</itunes:keywords>
+ 
+<itunes:summary>A podcast from Erik Capistrano, Juner Legion and Austin Salvador on random things filipinos talk about; news, films, computer and boardgames, pop culture, women and other stuff.</itunes:summary>
+ 
+<description>A podcast from Erik Capistrano, Juner Legion and Austin Salvador on random things filipinos talk about; news, films, computer and boardgames, pop culture, women and other stuff.</description>
+ 
+<itunes:owner>
+ 
+<itunes:name>Erik Gaius Capistrano</itunes:name>
+ 
+<itunes:email>gaius.coffee@gmail.com</itunes:email>
+ 
+</itunes:owner>
+ 
+<itunes:image href="{{site.JB.BASE_PATH}}/assets/BarbersCut.png" />
+  
+<itunes:category text="Society &amp; Culture" />
+ 
+<itunes:category text="Technology" />
+  
+<itunes:category text="TV &amp; Film" />
+ 
+<itunes:new-feed-url>{{site.JB.BASE_PATH}}/podcast.xml</itunes:new-feed-url>
+ 
+ {% for post in site.posts limit:10 %}
+ 
+ <item>
+ 
+ <title>{{ post.title }}</title>
+ 
+ <itunes:author>Erik Gaius Capistrano &amp; Juner Hart Legion</itunes:author>
+ 
+ <itunes:subtitle>Barber's Cut: {{ post.title }}</itunes:subtitle>
+ 
+ <itunes:summary>{{ post.description | xml_escape }}</itunes:summary>
+ 
+ <itunes:image href="{{site.JB.BASE_PATH}}/assets/BarbersCut.png" />
+ 
+ <enclosure url="{{ post.link }}" length="{{ post.length }}" type="audio/mpeg" />
+ 
+ <guid>{{ post.link }}</guid>
+ 
+ <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S" }} GMT</pubDate>
+ 
+ <itunes:duration>{{ post.duration }}</itunes:duration>
+ 
+ <itunes:keywords>philippines,random,talkshow,filipino,pinoy,technology,films,games,boardgames</itunes:keywords>
+ 
+ </item>
+ 
  {% endfor %}
  
-</feed>
+</channel>
+ 
+</rss>
